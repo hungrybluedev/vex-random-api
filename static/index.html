@@ -25,7 +25,6 @@
     />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Home | Vex Random Number API" />
     <meta
       property="twitter:description"
@@ -40,7 +39,7 @@
   </head>
   <body>
     <header>
-      <h1 id="hero-heading">Random Number API</h1>
+      <h1 id="hero-heading">Vex Random Number API</h1>
     </header>
     <main>
       <h2 id="introduction-heading">Introduction</h2>
@@ -145,7 +144,7 @@
           </tr>
           <tr>
             <td><code>max</code></td>
-            <td>2<sup>32</sup> for integers and 1.0 for floats.</td>
+            <td>2<sup>31</sup> for integers and 1.0 for floats.</td>
             <td>
               The maximum value below which values can be returned. Exclusive
               limit.
@@ -157,6 +156,14 @@
             <td>
               Set this to true if floating point numbers are required. Returns
               integers otherwise.
+            </td>
+          </tr>
+          <tr>
+            <td><code>json</code></td>
+            <td>false</td>
+            <td>
+              Set this true if you want the response in JSON format. Returns an
+              HTML response otherwise.
             </td>
           </tr>
         </tbody>
