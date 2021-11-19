@@ -5,9 +5,10 @@ import nedpals.vex.server
 import nedpals.vex.html
 import nedpals.vex.ctx
 import os
+import strconv
 
 const (
-	port     = get_port()
+	port     = strconv.atoi(os.getenv('PORT')) or { 8080 }
 	defaults = {
 		'min':   '0'
 		'max':   '-1'
@@ -20,11 +21,6 @@ struct APIResult {
 	title       string
 	description string
 	value       string
-}
-
-fn get_port() int {
-	value := os.getenv('PORT').int()
-	return if value == 0 { 8080 } else { value }
 }
 
 fn validate(name string, query_parameters map[string]string) string {
