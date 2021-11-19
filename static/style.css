@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+  margin: 1rem 0;
+}
+body {
+  font-family: "PT Serif", serif;
+}
+main {
+  padding: 2rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+ol,
+ul {
+  margin-left: 2ch;
+}
+header {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+table,
+table th,
+table td {
+  padding: 10px 5px;
+}
+table {
+  border-collapse: collapse;
+  border: 1.5px solid #444;
+  margin: 1rem auto;
+}
+table th {
+  border-bottom: 1.5px solid #444;
+}
