@@ -6,3 +6,4 @@ vex_example
 *.so
 *.dylib
 *.dll
+vls.log
